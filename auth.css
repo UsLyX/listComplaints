@@ -1,0 +1,47 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 20%;
+}
+.reg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.flex__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex__container * {
+    margin: 20px 0;
+}
+.flex__container p {
+    font-size: 28px;
+}
+.flex__container input {
+    width: 100%;
+    padding: 15px 0 15px 15px;
+    border: 1px solid aqua;
+    border-radius: 25px;
+    outline: none;
+}
+.flex__container button {
+    width: 100%;
+    padding: 15px 0;
+    border: 1px solid aqua;
+    border-radius: 25px;
+    background-color: #fff;
+    color: aqua;
+    transition: 0.2s ease-in-out;
+}
+.flex__container button:hover {
+    background-color: aqua;
+    color: #fff;
+}

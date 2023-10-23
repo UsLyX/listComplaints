@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: #408AD2;
+}
+header{
+    position: relative;
+    display: flex;
+    background-color: rgb(37, 37, 212);
+    color: #fff;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 60px;
+}
+.btn{
+    margin-left: 40px;
+    background-color: rgb(37, 37, 212);
+    color: #fff;
+    border: 1.5px solid #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: #fff;
+    color: rgb(37, 37, 212);
+}
+.list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #408AD2;
+    color: #fff;
+}
+.element{
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 0px 8px 8px rgba(34, 60, 80, 0.2);
+    margin-bottom: 50px;
+    background-color: #0C0C8A;
+    cursor: pointer;
+}
+.title{
+    padding-left: 5%;
+    font-size: 26px;
+    align-self: flex-start;
+}
+.form_create{
+    align-self: center;
+    position: absolute;
+    left: 5%;
+}
+.create_btn{
+    background-color: rgb(37, 37, 212);
+    color: #fff;
+    border: 1.5px solid #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+.create_btn:hover{
+    background-color: #fff;
+    color: rgb(37, 37, 212);
+}

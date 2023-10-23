@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Поле для ввода информации</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <form action="register.php" method="post" class="all" id="form">
+      
+       <div class="all_input">
+
+            <input type="text" class="input login" name="login" maxlength="25" placeholder="Логин">
+
+            <input type="password" class="input password" name="password" min="6" placeholder="Пароль">
+
+            <input type="text" class="input name" placeholder="ФИО" name="name">
+
+            <input type="text" class="input phone" name="phone" min="6" placeholder="Телефон">
+
+            <input type="text" class="input email" type="email" name="email" min="6" placeholder="Эл. почта">
+
+            <button type="submit" class="button">Зарегистрироваться</button>
+        </div>
+        
+    </form>
+    <form class="auth" action="authRedirect.php">
+        <p>Уже есть аккаунт?</p>
+        <button class="auth_btn">Войти</button>
+    </form>
+    <script>
+        const form = document.getElementById('form');
+        const login = document.querySelector('.login');
+        const password = document.querySelector('.password');
+        const namee = document.querySelector('.name');
+        const phone = document.querySelector('.phone');
+        const email = document.querySelector('.email');
+        form.addEventListener('submit', (event) => {
+            if(login.value == '' || password.value == '' || namee.value == '' || phone.value == ''|| email.value == ''){
+                alert('Ни одно поле не должно быть пустым');
+                event.preventDefault();
+            }
+            if(password.value.length < 6){
+                alert('Пароль должен иметь больше 6 символов');
+                event.preventDefault();
+            }
+        })
+    </script>
+</html>
